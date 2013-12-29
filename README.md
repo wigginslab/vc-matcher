@@ -6,9 +6,10 @@ Predicts which VC's will invest in a company based on user given data and crunch
 Development Environment Installation Instructions
 ---
 Set the following environment variables
-*port- port to serve the app on
-*host - host to serve the app on
-*crunchbase_key - your api key for Crunchbase
+
+* port- port to serve the app on
+* host - host to serve the app on
+* crunchbase_key - your api key for Crunchbase
 
  
  ```python
