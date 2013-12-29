@@ -8,9 +8,8 @@ Development Environment Installation Instructions
 Set the following environment variables
 
 * port- port to serve the app on
-* host - host to serve the app on
-* crunchbase_key - your api key for Crunchbase
-
+* host- host to serve the app on
+* crunchbase_key- your api key for Crunchbase
  
  ```python
 pip install -r requirements.txt
