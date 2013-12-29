@@ -68,6 +68,8 @@
         <div class="hero-unit">
           <h1>VC Matcher</h1>
             <p>Write a description of your product below and find venture capitalists who have invested in similar products.</p>
+            <label id="desc-warning" class="control-label" for="inputWarning" style="display:none"><b>Error: Description must be at least 3 words.</b></label>
+            <label id="desc-error" class="control-label" for="inputError" style="display:none"><b>Error: Invalid description.</b></label>
             <textarea rows="4" cols="20" id="description" name="description" style="width:100%" placeholder="Example: A service that would let people bring all their files anywhere, with no need to email around attachments by two MIT students."></textarea>
             <a href="#vcs" id="submit-desc" class="btn btn-primary btn-large">Submit</a>
         </div>
