@@ -8,7 +8,7 @@ from flask import Flask
 from models.company import Company,VC,Trigram,Cogram, db
 import pickle
 import sys
-from naive_bayes import *
+from vc_matcher import *
 import datetime
 db.create_all()
 
