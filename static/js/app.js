@@ -9,24 +9,41 @@ $("#submit-desc").click(function(){
 		$("#desc-warning").show();
 	}
 	else{
-		$.ajax({
-			url:"/get/vcs/"+page,
-			method:"POST",
-			data:"description="+desc,
-			success:function(data){
-				_.templateSettings.variable = "rc";
+		$('.progress-bar').progressbar();
+		$('#loading').show();
+	}
+});
 
-				var template = _.template(
-	            	$( "script.template" ).html()
-	        	);
-				console.log(data);
-	        	$( "#vc-list" ).html(
-	            template(data)
-	       		 );
-	        	page = page + 1;
-			},
-			error:function(){
-				$("#desc-error").show();
-			}
-		});
+function queryVCs(){
+	$.ajax({
+		url:"/get/vcs/"+page,
+		method:"POST",
+		data:"description="+desc,
+		success:function(data){
+			// remove progress bar
+			$('#loading').hide();
+			_.templateSettings.variable = "rc";
+
+			var template = _.template(
+            	$( "script.template" ).html()
+        	);
+			console.log(data);
+        	$( "#vc-list" ).append(
+            template(data)
+       		 );
+        	page = page + 1;
+        	if (page < 8){
+        		queryVCs();
+        	}
+		},
+		error:function(){
+			$("#desc-error").show();
+		}
+	});
+}
+
+$('.progress-bar').on("positionChanged", function (e) {
+    if (e.percent == 100){
+    	$('.progress-bar').reset();
+    }
 });

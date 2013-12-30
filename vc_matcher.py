@@ -129,7 +129,7 @@ def match_vc(text, page):
 		vc_model = pickle.loads(vc.nb_model)
 		result = vc_model.prob_classify(new_features[0]).prob(1)
 		# how much of a match must it be to be returned
-		threshold = .55
+		threshold = .6
 		if result >= threshold:
 			percent.append(result)
 			vc_names.append(vc_name)

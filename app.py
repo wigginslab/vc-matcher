@@ -18,6 +18,7 @@ def get_vcs(page):
 	"""
 	Match startup description with vcs
 	"""
+	print page
 	# startup description
 	desc = request.form['description']
 	vc_lists = match_vc(desc, page)
