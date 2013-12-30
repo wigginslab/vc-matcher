@@ -4,7 +4,6 @@ import csv
 import pickle
 import datetime
 import re
-from models.company import *
 import json
 
 def gen_features(startup_ngrams, label=None):
@@ -107,6 +106,7 @@ def match_vc(text, page):
 	returns:
 		vc_holder: JSON holding the VC name, url, and percent match
 	"""
+	"""
 	ngrams = build_ngrams(text)
 	new_features = gen_features(ngrams)
 
@@ -147,3 +147,4 @@ def match_vc(text, page):
 		vc_holder['listItems'].append(json_dic)
 
 	return vc_holder
+"""
