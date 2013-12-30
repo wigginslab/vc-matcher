@@ -1,0 +1,33 @@
+.center{
+	display:block;
+	margin:auto;
+}
+
+#submit-desc.btn{
+	margin-top:5%;
+}
+
+
+#loading{
+	width:100%;
+}
+.progress{
+
+    width:100%;
+}
+
+.progress .progress-bar.six-sec-ease-in-out {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -ms-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+}
+
+.progress .progress-bar.timed-ease-in-out {
+    -webkit-transition: width 300s ease-in-out;
+    -moz-transition: width 300s ease-in-out;
+    -ms-transition: width 300s ease-in-out;
+    -o-transition: width 300s ease-in-out;
+    transition: width 300s ease-in-out;
+}
