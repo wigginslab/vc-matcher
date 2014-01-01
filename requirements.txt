@@ -4,3 +4,5 @@ psycopg2
 gunicorn
 numpy
 nltk
+scikit-learn
+scipy

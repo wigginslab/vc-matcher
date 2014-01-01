@@ -65,7 +65,8 @@ for vc in vcs:
 	nb_model = build_model(yes_cograms,no_cograms)
 	new_VC = VC(name=vc_name,url=vc_url, nb_model=nb_model)
 	db.session.add(new_VC)
-db.session.commit()
+	db.session.commit()
+	print 'added'
 db.session.close()
 
 print datetime.datetime.now()
