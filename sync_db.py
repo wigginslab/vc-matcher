@@ -43,6 +43,7 @@ for cogram in co_cograms:
 	cograms = cogram[1]
 	cogram_dic[company_name] = cograms
 
+vc_num = 1
 errors = 0
 for vc in vcs:
 	vc_url = vc[0]
@@ -66,7 +67,9 @@ for vc in vcs:
 	new_VC = VC(name=vc_name,url=vc_url, nb_model=nb_model)
 	db.session.add(new_VC)
 	db.session.commit()
-	print 'added'
+	print vc_num
+	vc_num = vc_num + 1
+
 db.session.close()
 
 print datetime.datetime.now()
