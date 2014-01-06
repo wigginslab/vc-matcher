@@ -44,6 +44,7 @@ function queryVCs(){
 }
 
 $('.progress-bar').on("positionChanged", function (e) {
+	console.log(e.percent)
     if (e.percent == 100){
     	$('.progress-bar').reset();
     }
