@@ -2,7 +2,4 @@ flask==0.9
 flask-sqlalchemy
 psycopg2
 gunicorn
-numpy
 nltk
-scikit-learn
-scipy

@@ -25,9 +25,9 @@
 }
 
 .progress .progress-bar.timed-ease-in-out {
-    -webkit-transition: width 300s ease-in-out;
-    -moz-transition: width 300s ease-in-out;
-    -ms-transition: width 300s ease-in-out;
-    -o-transition: width 300s ease-in-out;
-    transition: width 300s ease-in-out;
+    -webkit-transition: width 900s ease-in-out;
+    -moz-transition: width 900s ease-in-out;
+    -ms-transition: width 900s ease-in-out;
+    -o-transition: width 900s ease-in-out;
+    transition: width 900s ease-in-out;
 }
