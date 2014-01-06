@@ -43,27 +43,18 @@
 
   <style type="text/css"></style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="http://getbootstrap.com/2.3.2/examples/fluid.html#">Lean Workbench: VC-Matcher</a>
-          <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-            </p>
-            <ul class="nav">
-              <li><a href="http://getbootstrap.com/2.3.2/examples/fluid.html#contact">Contact Us</a></li>
-              <li class="active"><a href="http://getbootstrap.com/2.3.2/examples/fluid.html#">Home</a></li>
-              <li><a href="mailto:jen@leanworkbench.com">Contact Us</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+      <nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">VC-Matcher: Lean Workbench</a>
       </div>
-    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="https://github.com/wigginslab/vc-matcher">Github</a></li>
+            <li><a href="mailto:jen@leanworkbench.com">Contact Us</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
     <div class="container-fluid">
       <div class="span9 offset3">
         <div class="hero-unit">
@@ -97,7 +88,7 @@
             </div><!--/span-->
           </div><!--/row-->
           <footer>
-            <p>© Lean Workbench 2013</p>
+            <p>© Lean Workbench 2014</p>
           </footer>
           </div>
           <script src="/static/js/underscore.js"></script>

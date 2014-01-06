@@ -11,6 +11,7 @@ $("#submit-desc").click(function(){
 	else{
 		$('.progress-bar').progressbar();
 		$('#loading').show();
+		queryVCs(page);
 	}
 });
 
