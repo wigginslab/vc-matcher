@@ -30,4 +30,4 @@ app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
 })
 
 if __name__ == '__main__':
-	app.run(debug=True, port=8000)
+	app.run(debug=True, port=80)
