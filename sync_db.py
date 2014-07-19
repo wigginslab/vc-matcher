@@ -57,9 +57,8 @@ for vc in vcs:
 			yes_cograms.append(cogram_dic[company])
 		except:
 			errors = errors + 1
-
-	# get equal cograms not used in vc companies
-	for i in range(len(vc_companies)):
+	#get 1/2 cograms not used in vc companies
+	for i in range(len(vc_companies)//2):
 		company = cogram_dic.keys()[i]
 		if company not in vc_companies:
 			no_cograms.append(cogram_dic[company])

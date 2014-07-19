@@ -6,6 +6,7 @@ import datetime
 import re
 import json
 from models.company import *
+import datetime
 
 def gen_features(startup_ngrams, label=None):
 	"""
@@ -114,6 +115,8 @@ def match_vc(text, page):
 	upper_query_bound = str(page * 50)
 	if int(upper_query_bound) > 438:
 		upper_query_bound = str(438)
+        print 'begin query at:'
+        print datetime.datetime.now()
 
 	# query database for VCs
 	vcs = db.session.query(VC).filter("id >="+ lower_query_bound +" AND id <="+upper_query_bound).all()
@@ -123,13 +126,19 @@ def match_vc(text, page):
 	percent = []
 
 	# get results
-	for vc in vcs:
+        for vc in vcs:
+                print 'inside get results'
+                print datetime.datetime.now()
 		vc_name = vc.name
 		vc_url = vc.url
+                print 'vc_name %s' %(vc_name)
+                print 'vc_url %s' %(vc_url)
 		vc_model = pickle.loads(vc.nb_model)
 		result = vc_model.prob_classify(new_features[0]).prob(1)
+                print 'result:'
+                print result
 		# how much of a match must it be to be returned
-		threshold = .6
+		threshold = .75 
 		if result >= threshold:
 			percent.append(result)
 			vc_names.append(vc_name)
@@ -145,5 +154,7 @@ def match_vc(text, page):
 			'result': percent[i]
 		}
 		vc_holder['listItems'].append(json_dic)
+        print 'done making page'
+        print datetime.datetime.now()
 
 	return vc_holder
