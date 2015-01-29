@@ -52,7 +52,7 @@ for vc in vcs:
 	yes_cograms = []
 	# get cograms used in vc companies
 	no_cograms = []
-	for company in vc_companies:
+	for company in len(vc_companies//2):
 		try:
 			yes_cograms.append(cogram_dic[company])
 		except:
@@ -62,12 +62,16 @@ for vc in vcs:
 		company = cogram_dic.keys()[i]
 		if company not in vc_companies:
 			no_cograms.append(cogram_dic[company])
+	no_cograms = []
 	nb_model = build_model(yes_cograms,no_cograms)
 	new_VC = VC(name=vc_name,url=vc_url, nb_model=nb_model)
-	db.session.add(new_VC)
-	db.session.commit()
-	print vc_num
-	vc_num = vc_num + 1
+	try:
+		db.session.add(new_VC)
+		db.session.commit()
+		print vc_num
+		vc_num = vc_num + 1
+	except:
+		print 'failed'
 
 db.session.close()
 
