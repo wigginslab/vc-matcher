@@ -4,3 +4,4 @@ psycopg2
 nltk
 tornado
 pycrunchbase
+simplejson
