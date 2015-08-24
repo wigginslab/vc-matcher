@@ -8,6 +8,8 @@ venv
 *~
 *swo
 *swp
+# local directory for storing test files
+data/test
 
 # Packages
 *.egg
