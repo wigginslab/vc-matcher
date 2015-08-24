@@ -48,7 +48,7 @@ for vc in vcs:
 	if len(invpls) > 19:
 		topvcs.append((pl,name,invests))
 	print topvcs
-with open("./data/vctree/opvcs.p","w") as f:
+with open("./data/vctree/topvcs.p","w") as f:
 	pickle.dump(topvcs,f)
 				
 # Step 2: make list of companies to get data for

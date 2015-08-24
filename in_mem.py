@@ -11,7 +11,7 @@ import datetime
 print datetime.datetime.now()
 
 # For each vc, create the vc
-vcs= pickle.load(open("data/vctree/opvcs.p", "rb"))
+vcs= pickle.load(open("data/vctree/topvcs.p", "rb"))
 
 co_cograms = pickle.load(open("data/vctree/cograms.p","rb"))
 
