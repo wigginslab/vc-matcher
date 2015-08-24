@@ -6,5 +6,4 @@ tornado
 simplejson
 argparse
 unittest2
-# -e git+https://github.com/alabid/pycrunchbase.git@vc-matcher#egg=pycrunchbase-vc-matcher
--e /Users/danielalabi/code/pycrunchbase
+ -e git+https://github.com/alabid/pycrunchbase.git@vc-matcher#egg=pycrunchbase-vc-matcher

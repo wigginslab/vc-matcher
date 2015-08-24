@@ -6,6 +6,9 @@
 # for now ignore my own generated data files
 data/
 
+#temporarily ignore `src` since we are installing an .egg from my repo
+src/
+
 #local
 venv
 *~
