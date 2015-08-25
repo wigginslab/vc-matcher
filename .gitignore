@@ -4,7 +4,7 @@
 *.so
 
 # for now ignore my own generated data files
-data/
+data/vctree2
 
 #temporarily ignore `src` since we are installing an .egg from my repo
 src/

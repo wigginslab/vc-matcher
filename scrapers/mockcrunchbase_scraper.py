@@ -21,7 +21,7 @@ class MockCBScraper(CBScraper):
         self.generate_dicts()
 
     def generate_dicts(self):
-        # Generates 1024 VCs: aaaaa, aaaab, ..., eeeed, eeeee
+        # Generates 3125 = 5^5 VCs: aaaaa, aaaab, ..., eeeed, eeeee
         # Investments per VCs: a -> 1, b -> 2, c -> 3, d -> 4, e -> 5
         #   for example: "aabde" has 1 + 1 + 2 + 4 + 5 = 13 investments
         # Non-VC companies: "a", "b", ..., "z"

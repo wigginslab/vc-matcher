@@ -23,10 +23,10 @@ class CBScraper:
 
         # MockCBScraper should override so that test files
         # can be stored elsewhere
-        self.TOP_VCS_FILE = "../data/vctree/topvcs.p"
-        self.COMPANY_GRAMS1_FILE = "../data/vctree/cograms.p"
-        self.COMPANY_GRAMS2_FILE = "../data/vctree/cograms2.p"
-        self.COMPANY_GRAMS3_FILE = "../data/vctree/cograms3.p"
+        self.TOP_VCS_FILE = "../data/vctree2/topvcs.p"
+        self.COMPANY_GRAMS1_FILE = "../data/vctree2/cograms.p"
+        self.COMPANY_GRAMS2_FILE = "../data/vctree2/cograms2.p"
+        self.COMPANY_GRAMS3_FILE = "../data/vctree2/cograms3.p"
 
         self.generate_dicts()
 
