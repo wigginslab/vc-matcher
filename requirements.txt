@@ -3,3 +3,7 @@ flask-sqlalchemy
 psycopg2
 nltk
 tornado
+simplejson
+argparse
+unittest2
+ -e git+https://github.com/alabid/pycrunchbase.git@vc-matcher#egg=pycrunchbase-vc-matcher

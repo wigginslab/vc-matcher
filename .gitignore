@@ -3,13 +3,19 @@
 # C extensions
 *.so
 
+# for now ignore my own generated data files
+data/
+
+#temporarily ignore `src` since we are installing an .egg from my repo
+src/
+
 #local
 venv
 *~
 *swo
 *swp
 # local directory for storing test files
-data/test
+data/tests
 
 # Packages
 *.egg
